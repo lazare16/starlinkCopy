@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('DIN-Bold.eot'); /* IE9 Compat Modes */
+    src: url('DIN-Bold?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('DIN-Bold.woff') format('woff'), /* Modern Browsers */
+         url('DIN-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('DIN-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+body{
+    height: 100vh;
+    font-family: 'MyWebFont', sans-serif;
+}
+/* background picture */
+img{
+    width: 100%;
+}
+
+.wraper>img{
+    position: relative;
+}
+
+.header{
+    /* background-color: brown; */
+    height: 10vh;
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    color: white;
+}
+
+
+.logo{
+    /* background-color: blue; */
+    padding: 0 5px 0 5px;
+}
+
+.wrapper>.header, ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.wrapper>.header>ul{
+    list-style: none;
+    /* background-color: blueviolet; */
+    margin: 0 5% 0 0;
+}
+
+.wrapper>.header>ul>li{
+    margin-left: 40px;
+}
+
+.burgerMenu{
+    /* background-color: aqua; */
+}
+
