@@ -1,94 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>StarlinkClone</title>
-  </head>
-  <body>
-    <!-- wrapper -->
-    <div class="wrapper">
-      <!-- bg picture -->
-      <img src="IMAGES/starlinkBg.jpg" alt="starlinkBg" />
-      <!-- header -->
-      <div class="header">
-        <!-- logo -->
-        <div class="logo">
-          <img src="IMAGES/STARLINK_logo.png" alt="" />
-        </div>
-        <!-- menu -->
-        <ul>
-          <!-- active section of menu -->
-          <li class="active">RESIDENTAL</li>
-          <li>BUSINESS</li>
-          <li>RV</li>
-          <li>MARITIME</li>
-          <li>AVIATION</li>
-          <li>IOT</li>
-          <li>TECHNOLOGY</li>
-          <li>SUPPORT</li>
-        </ul>
-        <!-- burger menu -->
-        <div class="burgerMenu">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
-            viewBox="0 0 22.453 15"
-          >
-            <g
-              id="Group_2736"
-              data-name="Group 2736"
-              transform="translate(-323.451 -45.154)"
-            >
-              <path
-                id="Path_1245"
-                data-name="Path 1245"
-                d="M-5639.049,8203.654h21.453"
-                transform="translate(5963 -8158)"
-                fill="none"
-                stroke="#fff"
-                stroke-linecap="round"
-                stroke-width="1"
-              />
-              <path
-                id="Path_1246"
-                data-name="Path 1246"
-                d="M-5639.049,8203.654h21.453"
-                transform="translate(5963 -8151)"
-                fill="none"
-                stroke="#fff"
-                stroke-linecap="round"
-                stroke-width="1"
-              />
-              <path
-                id="Path_1247"
-                data-name="Path 1247"
-                d="M-5639.049,8203.654h21.453"
-                transform="translate(5963 -8144)"
-                fill="none"
-                stroke="#fff"
-                stroke-linecap="round"
-                stroke-width="1"
-              />
-            </g>
-          </svg>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>StarlinkClone</title>
+</head>
+
+<body>
+  <!-- wrapper -->
+  <div class="wrapper">
+    <!-- bg picture -->
+    <img src="IMAGES/starlinkBg.jpg" alt="starlinkBg" />
+    <!-- header -->
+    <div class="header">
+      <!-- logo -->
+      <div class="logo">
+        <img src="IMAGES/STARLINK_logo.png" alt="STARLINK" />
+        <img src="IMAGES/logo_x_white.png" alt="STARLINK X" class="hidden">
       </div>
-      <!-- short description -->
-      <div class="shortDescription">
-        <h2>ORDER STARLINK</h2>
-        <div class="description">
-          <p>
-            Starlink provides high-speed, low-latency broadband internet across
-            the globe.<br> Within each coverage area, orders are fulfilled on a
-            first-come, first-served basis.
-          </p>
-        </div>
+      <!-- menu -->
+      <ul>
+        <!-- active section of menu -->
+        <li class="active">RESIDENTAL</li>
+        <li>BUSINESS</li>
+        <li>RV</li>
+        <li>MARITIME</li>
+        <li>AVIATION</li>
+        <li>IOT</li>
+        <li>TECHNOLOGY</li>
+        <li>SUPPORT</li>
+      </ul>
+      <!-- burger menu -->
+      <div class="burgerMenu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 22.453 15">
+          <g id="Group_2736" data-name="Group 2736" transform="translate(-323.451 -45.154)">
+            <path id="Path_1245" data-name="Path 1245" d="M-5639.049,8203.654h21.453" transform="translate(5963 -8158)"
+              fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1" />
+            <path id="Path_1246" data-name="Path 1246" d="M-5639.049,8203.654h21.453" transform="translate(5963 -8151)"
+              fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1" />
+            <path id="Path_1247" data-name="Path 1247" d="M-5639.049,8203.654h21.453" transform="translate(5963 -8144)"
+              fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1" />
+          </g>
+        </svg>
       </div>
     </div>
-  </body>
-  <script src="script.js"></script>
+    <!-- short description -->
+    <div class="shortDescription">
+      <h2>ORDER STARLINK</h2>
+      <div class="description">
+        <p>
+          Starlink provides high-speed, low-latency broadband internet across
+          the globe.<br> Within each coverage area, orders are fulfilled on a
+          first-come, first-served basis.
+        </p>
+      </div>
+    </div>
+    <!-- input for inputing address -->
+    <form action="#">
+      <!-- container for input and  clear button -->
+      <div class="field">
+        <input type="text" placeholder="SERVICE ADRESS" id="myInput">
+        <button onclick="clearInput()">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <line x1="3" y1="3" x2="21" y2="21" stroke="#fff" stroke-width="1" />
+            <line x1="21" y1="3" x2="3" y2="21" stroke="#fff" stroke-width="1" />
+          </svg>
+          
+        </button>
+      </div>
+      <!-- button to order -->
+      <button><span>ORDER NOW</span></button>
+    </form>
+  </div>
+</body>
+<script src="script.js"></script>
+
 </html>
