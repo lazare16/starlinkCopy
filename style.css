@@ -183,6 +183,7 @@ form>.field>button{
     border:none;
     left: 930px;
     top: 20px;
+    display: none;
 }
 
 /* setting size for clear button */
